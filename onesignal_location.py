@@ -10,12 +10,8 @@ PARAMS = {
 data = [
     {
         "extra_fields": ["country","notification_types","external_user_id", "location", "rooted", "ip", "country", "web_auth", "web_p256"]
-        
-    },
+    }
 ]
-
-r = requests.post(url = oneURL, json = data, headers= PARAMS) 
-  
-
+r = requests.post(url = oneURL, json = data, headers= PARAMS)  
 a = r.json()
 
